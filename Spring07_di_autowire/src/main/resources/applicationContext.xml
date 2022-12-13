@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="bookDao" class="com.xgrt.dao.impl.BookDaoImpl"/>
+    <!--byType要求（常用）：一个类型只能有一个bean(可以不起别名，最好要起）-->
+    <!--byName要求：有一个属性名称与bean的一样-->
+    <bean id="bookService" class="com.xgrt.service.impl.BookServiceImpl" autowire="byType"/>
+</beans>

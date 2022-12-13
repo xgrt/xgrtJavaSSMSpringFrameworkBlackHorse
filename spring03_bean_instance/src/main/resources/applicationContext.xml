@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!--1.导入spring的坐标spring-context，对应版本是5.2.10.RELEASE-->
+
+    <!--2.配置bean-->
+    <!--方式一：构造方法实例化bean-->
+<!--    <bean id="bookDao" name="dao" class="com.xgrt.dao.impl.BookDaoImpl"/>-->
+
+    <!--方式二：使用静态工厂实例化bean-->
+<!--    <bean id="orderDao" class="com.xgrt.factory.OrderDaoFactory" factory-method="getOrderDao"/>-->
+
+    <!--方式三：使用实例工厂实例化bean-->
+   <!-- <bean id="userFactory" class="com.xgrt.factory.UserDaoFactory"/>&lt;!&ndash;配合使用，实际无意义&ndash;&gt;
+    <bean id="userDao" factory-method="getUserDao" factory-bean="userFactory"/>-->
+
+    <!--方式四：使用FactoryBean实例化bean-->
+    <bean id="userDao" class="com.xgrt.factory.UserDaoFactoryBean"/>
+</beans>

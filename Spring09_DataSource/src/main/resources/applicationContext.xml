@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--添加一个新命名空间-->
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+
+       xmlns:context="http://www.springframework.org/schema/context"
+
+       xsi:schemaLocation="
+       http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context.xsd
+">
+    <!--管理DruidDataSource-->
+    <!--<bean id="druidDataSource" class="com.alibaba.druid.pool.DruidDataSource">
+        <property name="driverClassName" value="com.mysql.cj.jdbc.Driver"/>
+        <property name="url" value="jdbc:mysql://localhost:3306/spring_db"/>
+        <property name="username" value="root"/>
+        <property name="password" value="123456"/>
+     </bean>
+
+    <bean class="com.mchange.v2.c3p0.ComboPooledDataSource" id="comboPooledDataSource">
+        <property name="driverClass" value="com.mysql.cj.jdbc.Driver"/>
+        <property name="jdbcUrl" value="jdbc:mysql://localhost:3306/spring_db"/>
+        <property name="user" value="root"/>
+        <property name="password" value="123456"/>
+        <property name="maxPoolSize" value="20"/>
+      </bean>-->
+
+    <!--1、开启context命名空间-->
+    <!--2、使用context空间加载properties文件-->
+    <!--
+    问题一：properties文件的命名与系统的命名冲突，默认使用系统命名（系统命名的优先级高）
+    解决方法：将system-properties-mode属性改成"NEVER"，就不会读取到系统命名
+
+    问题二：要同时加载两个properties文件怎么办？
+    解决方法一：location属性里面写两个文件的路径用逗号(,)隔开
+    解决方法二（推荐使用）：location属性里面写成"classpath*:*.properties"，加载所有的properties文件
+    （classpath:*.properties(*.properties)是加载当前路径的所有文件（加上"classpath:"更规范））
+    -->
+    <context:property-placeholder location="classpath*:*.properties" system-properties-mode="NEVER"/>
+
+
+    <bean id="druidDataSource" class="com.alibaba.druid.pool.DruidDataSource">
+        <!--3、使用属性占位符${}读取properties 文件中的属性-->
+        <property name="driverClassName" value="${jdbc.driver}"/>
+        <property name="url" value="${jdbc.url}"/>
+        <property name="username" value="${jdbc.username}"/>
+        <property name="password" value="${jdbc.password}"/>
+    </bean>
+
+    <!--查看效果-->
+    <bean id="bookDao" class="com.xgrt.dao.impl.BookDaoImpl">
+        <property name="name" value="${username}"/>
+    </bean>
+</beans>

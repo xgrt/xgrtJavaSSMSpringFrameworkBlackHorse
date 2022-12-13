@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="bookDao" class="com.xgrt.dao.impl.BookDaoImpl">
+        <property name="array">
+            <array>
+                <value>1000</value>
+                <value>1645</value>
+                <value>85546</value>
+            </array>
+        </property>
+
+        <property name="list">
+            <list>
+                <value>xgrt</value>
+                <value>xgrt666</value>
+                <value>xingert666</value>
+            </list>
+        </property>
+
+        <property name="set">
+            <set>
+                <value>xgrt</value>
+                <value>xgrt666</value>
+                <value>xingert666</value>
+                <value>xgrt666</value><!--重复的会自动过滤-->
+                <value>鑫哥rt6666</value>
+            </set>
+        </property>
+
+        <property name="map">
+            <map>
+                <entry key="country" value="China"/>
+                <entry key="province" value="Jiangxi"/>
+                <entry key="city" value="Nanchang"/>
+            </map>
+        </property>
+
+        <property name="properties">
+            <props>
+                <prop key="country">China</prop>
+                <prop key="province">Jiangxi</prop>
+                <prop key="city">Nanchang</prop>
+            </props>
+        </property>
+    </bean>
+</beans>

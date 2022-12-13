@@ -1,0 +1,10 @@
+# Project exclude paths
+/Spring01_quickStart/target/
+/Spring02_baseConfig/target/
+/spring03_bean_instance/target/
+/Spring04_beanLifecycle/target/
+/Spring05_di_constructor/target/
+/Spring06_di_set/target/
+/Spring07_di_autowire/target/
+/Spring08_di_Collection/target/
+/Spring09_DataSource/target/

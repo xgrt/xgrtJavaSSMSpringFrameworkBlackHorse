@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/Spring01_quickStart/pom.xml" />
+        <option value="$PROJECT_DIR$/Spring02_baseConfig/pom.xml" />
+        <option value="$PROJECT_DIR$/spring03_bean_instance/pom.xml" />
+        <option value="$PROJECT_DIR$/Spring04_beanLifecycle/pom.xml" />
+        <option value="$PROJECT_DIR$/Spring05_dl_set/pom.xml" />
+        <option value="$PROJECT_DIR$/Spring05_di_constructor/pom.xml" />
+        <option value="$PROJECT_DIR$/Spring05_di_set/pom.xml" />
+        <option value="$PROJECT_DIR$/Spring07_di_autoware/pom.xml" />
+        <option value="$PROJECT_DIR$/Spring06_di_set/pom.xml" />
+        <option value="$PROJECT_DIR$/Spring07_di_autowire/pom.xml" />
+        <option value="$PROJECT_DIR$/Spring08_di_Collection/pom.xml" />
+        <option value="$PROJECT_DIR$/Spring09_DataSource/pom.xml" />
+        <option value="$PROJECT_DIR$/Spring10_container/pom.xml" />
+        <option value="$PROJECT_DIR$/Spring11_annotation_bean/pom.xml" />
+        <option value="$PROJECT_DIR$/Spring12_annotation_bean_manager/pom.xml" />
+        <option value="$PROJECT_DIR$/Spring11_annotation_di/pom.xml" />
+        <option value="$PROJECT_DIR$/Spring13_annotation_di/pom.xml" />
+        <option value="$PROJECT_DIR$/Spring14_annotation_third_bean_manager/pom.xml" />
+        <option value="$PROJECT_DIR$/Spring15_spring_mybatis/pom.xml" />
+        <option value="$PROJECT_DIR$/Spring15_spring_jUnit/pom.xml" />
+        <option value="$PROJECT_DIR$/Spring16_spring_jUnit/pom.xml" />
+        <option value="$PROJECT_DIR$/Spring17_aop_demo/pom.xml" />
+        <option value="$PROJECT_DIR$/Spring17_aop_quickstart/pom.xml" />
+        <option value="$PROJECT_DIR$/Spring18_aop_quickstart/pom.xml" />
+        <option value="$PROJECT_DIR$/Spring18_aop_pointcut/pom.xml" />
+        <option value="$PROJECT_DIR$/Spring19_aop_pointcut/pom.xml" />
+        <option value="$PROJECT_DIR$/Spring20_aop_advice_type/pom.xml" />
+        <option value="$PROJECT_DIR$/Spring21_case_interface_run_speed/pom.xml" />
+        <option value="$PROJECT_DIR$/Spring22_aop_advice_data/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_18" default="true" project-jdk-name="18" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>
