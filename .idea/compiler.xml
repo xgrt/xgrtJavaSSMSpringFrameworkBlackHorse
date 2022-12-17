@@ -16,6 +16,7 @@
         <module name="Spring13_annotation_di" />
         <module name="Spring07_di_autowire" />
         <module name="Spring04_beanLifecycle" />
+        <module name="Spring23_case_handle_password" />
         <module name="spring03_bean_instance" />
         <module name="Spring17_aop_demo" />
         <module name="Spring21_case_interface_run_speed" />
