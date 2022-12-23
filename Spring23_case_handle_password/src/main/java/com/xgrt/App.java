@@ -9,7 +9,7 @@ public class App {
     public static void main(String[] args) {
         ApplicationContext ctx=new AnnotationConfigApplicationContext(SpringConfig.class);
         ResourceService resourceService = ctx.getBean(ResourceService.class);
-        boolean flag = resourceService.openURL("http://pan.baodu.com/xgrt", "123456");
+        boolean flag = resourceService.openURL("https://pan.baidu.com/xgrt", "123456");
         System.out.println(flag);
     }
 }
